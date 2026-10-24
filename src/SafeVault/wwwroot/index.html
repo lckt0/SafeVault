@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafeVault</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>SafeVault</h1>
+
+    <section id="auth">
+      <form id="register-form" autocomplete="off">
+        <h2>Register</h2>
+        <label>Username <input name="username" required minlength="3" maxlength="32" pattern="[A-Za-z0-9_.\-]+"></label>
+        <label>Email <input name="email" type="email" required maxlength="254"></label>
+        <label>Password <input name="password" type="password" required minlength="12" maxlength="128"></label>
+        <button type="submit">Create account</button>
+      </form>
+
+      <form id="login-form">
+        <h2>Sign in</h2>
+        <label>Username <input name="username" required maxlength="32"></label>
+        <label>Password <input name="password" type="password" required maxlength="128"></label>
+        <button type="submit">Sign in</button>
+      </form>
+    </section>
+
+    <section id="vault" hidden>
+      <p>Signed in as <strong id="whoami"></strong> <button id="logout" type="button">Sign out</button></p>
+      <form id="note-form">
+        <h2>New note</h2>
+        <label>Title <input name="title" required maxlength="100"></label>
+        <label>Content <textarea name="content" required maxlength="4000" rows="4"></textarea></label>
+        <button type="submit">Save</button>
+      </form>
+      <h2>My notes</h2>
+      <ul id="notes"></ul>
+    </section>
+
+    <p id="status" role="status"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

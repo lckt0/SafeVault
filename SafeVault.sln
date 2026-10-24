@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3398CF68-B388-41A3-8957-75B20E3F5A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeVault", "src\SafeVault\SafeVault.csproj", "{28AF01E5-E6CA-4802-9C74-5DD84E4AACFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{17DF87DB-D97D-477D-8388-183F8EBC4195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeVault.Tests", "tests\SafeVault.Tests\SafeVault.Tests.csproj", "{0585503C-CA75-43A7-91AF-50CBF8F37B25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28AF01E5-E6CA-4802-9C74-5DD84E4AACFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28AF01E5-E6CA-4802-9C74-5DD84E4AACFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28AF01E5-E6CA-4802-9C74-5DD84E4AACFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28AF01E5-E6CA-4802-9C74-5DD84E4AACFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0585503C-CA75-43A7-91AF-50CBF8F37B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0585503C-CA75-43A7-91AF-50CBF8F37B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0585503C-CA75-43A7-91AF-50CBF8F37B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0585503C-CA75-43A7-91AF-50CBF8F37B25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28AF01E5-E6CA-4802-9C74-5DD84E4AACFD} = {3398CF68-B388-41A3-8957-75B20E3F5A2F}
+		{0585503C-CA75-43A7-91AF-50CBF8F37B25} = {17DF87DB-D97D-477D-8388-183F8EBC4195}
+	EndGlobalSection
+EndGlobal
